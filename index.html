@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neil Nukem Plays</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .left-column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    .middle-column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    .left-content {
+      margin-left: 250px; /* Adjust the left margin as needed */
+    }
+    
+    .left-content ul {
+      padding-left: 20px; /* Adjust the left padding for the list items */
+      list-style: none; /* Remove the bullet points */
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      
+      .left-column, .middle-column {
+        flex: 100%;
+      }
+      
+      .left-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <div class="left-content">
+        <h2>May-25 Slate</h2>
+        <ul>
+          <li>Cards F5 RL -.5 +105</li>
+          <li>Marlins ML -125 2u</li>
+          <li>Cards RL -1.5 +125</li>
+          <li>Orioles F5 ML +100</li>  
+          <li>Parlay Rays ML + Mariners ML +129 2u</li>
+          <li>Rays/Jays NRFI -110 2u</li>
+          <li>Heat +8</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="middle-column">
+      <!-- Start of HTML Script -->
+      <iframe title="Sports Odds Widget" style="width: 80%; height: 650px;" src="https://widget.the-odds-api.com/v1/sports/baseball_mlb/events/?accessKey=wk_c82b0cc9ccc22e0af02af05313848300&bookmakerKeys=pinnacle&oddsFormat=american&markets=h2h%2Cspreads%2Ctotals&marketNames=h2h%3AMoneyline%2Cspreads%3ASpreads%2Ctotals%3AOver%2FUnder"></iframe>
+      <!-- End of HTML Script -->
+    </div>
+  </div>
+</body>
+</html>
